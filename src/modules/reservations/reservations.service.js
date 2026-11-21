@@ -26,7 +26,7 @@ function createReservationsService({ roomsRepository, reservationsRepository,
     }
     const existing = await reservationsRepository.list({ roomId: input.roomId });
     const overlaps = existing.some(item => item.status === "CONFIRMED" &&
-      start.getTime() < new Date(item.endTime).getTime() &&
+      start.getTime() <= new Date(item.endTime).getTime() &&
       new Date(item.startTime).getTime() < end.getTime());
     if (overlaps) throw new ConflictError("Room already booked", "ROOM_ALREADY_BOOKED");
 
