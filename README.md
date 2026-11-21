@@ -63,3 +63,10 @@ Workflow działa przy push do main i przy każdym PR. Uruchamia PostgreSQL servi
 checkout, Node 22 z cache npm, npm ci, npm test oraz docker build.
 Tymczasowy PostgreSQL runnera ma trust, nie zawiera rzeczywistych danych ani sekretów.
 Klucz JWT testów jest losowany przez setupEnv. Żaden sekret nie jest wpisany w workflow.
+
+## Sprawozdanie
+
+[PDF](sprawozdanie/151898_Kotkowski_Grzegorz_Lab05.pdf) oraz
+[wersja edytowalna DOCX](sprawozdanie/151898_Kotkowski_Grzegorz_Lab05.docx).
+Kod opisany w sprawozdaniu: tag `lab05`, commit
+`64c142869786ca2891705637c40a0c67d46bfcda`.
