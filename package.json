@@ -1,0 +1,27 @@
+{
+  "name": "room-booking-api-lab05",
+  "version": "5.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js",
+    "migrate:latest": "knex migrate:latest",
+    "migrate:rollback": "knex migrate:rollback",
+    "seed:run": "knex seed:run",
+    "test": "jest --runInBand",
+    "test:unit": "jest --runInBand tests/unit",
+    "test:integration": "jest --runInBand tests/integration"
+  },
+  "dependencies": {
+    "express": "5.1.0",
+    "zod": "^4.0.0",
+    "knex": "^3.1.0",
+    "pg": "^8.16.0",
+    "bcryptjs": "^3.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "jest": "^30.0.0",
+    "supertest": "^7.0.0"
+  }
+}
